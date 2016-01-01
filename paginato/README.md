@@ -15,7 +15,7 @@ When it is implemented in your webpage,
 3. Add an empty div block. 
 	<div class="paging-nav"></div>
 4. Add the below script
-    <script>
+    ```javascript
     var paginato = {
     'curPage':1,
     'totalPages':100,
@@ -30,6 +30,6 @@ When it is implemented in your webpage,
     function makeYourAjaxCall(currentPage) {
      /* Your code to do with the page content changes. currentPage has the current navigated page number */ 
     }
-    </script>
+    ```
 
 
