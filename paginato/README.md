@@ -14,24 +14,22 @@ When it is implemented in your webpage,
 2. Include jquery lib.
 3. Add an empty div block. 
 	<div class="paging-nav"></div>
-
 4. Add the below script
-
-	<script>
-	var paginato = {
-	'curPage':1,
-	'totalPages':100,
-	'pagevisble':15,
-	'firstTxt':'|<<',
-	'nextTxt':'>|',
-	'prevTxt':'|<',
-	'lastTxt':'>>|'
-	};
-	paginatoInit('paging-nav');
-
-	function makeYourAjaxCall(currentPage) {
-	 /* Your code to do with the page content changes. currentPage has the current navigated page number */ 
-	}
-	</script>
+    <script>
+    var paginato = {
+    'curPage':1,
+    'totalPages':100,
+    'pagevisble':15,
+    'firstTxt':'|<<',
+    'nextTxt':'>|',
+    'prevTxt':'|<',
+    'lastTxt':'>>|'
+    };
+    paginatoInit('paging-nav');
+    
+    function makeYourAjaxCall(currentPage) {
+     /* Your code to do with the page content changes. currentPage has the current navigated page number */ 
+    }
+    </script>
 
 
