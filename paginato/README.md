@@ -13,7 +13,9 @@ When it is implemented in your webpage,
 1. Include the paginato.js and paginato.css in your html. 
 2. Include jquery lib.
 3. Add an empty div block. 
+	```html
 	<div class="paging-nav"></div>
+	```
 4. Add the below script
     ```javascript
     var paginato = {
