@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Paginato</title>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="paginato.js"></script>
+  <link href="paginato.css" rel="stylesheet" type="text/css" /> 
+</head>
+<body>
+ 
+<div class="paging-nav"></div>
+
+<script>
+var paginato = {
+'curPage':1,
+'totalPages':100,
+'pagevisble':15,
+'firstTxt':'|<<',
+'nextTxt':'>|',
+'prevTxt':'|<',
+'lastTxt':'>>|'
+};
+paginatoInit('paging-nav');
+
+function makeYourAjaxCall(currentPage) {
+ /* Your code to do with the page content changes. currentPage has the current navigated page number */ 
+}
+</script>
+
+</body>
+</html>
