@@ -1,5 +1,3 @@
-package workout;
-
 import java.util.Scanner;
 
 public class MyInsertionSort {
