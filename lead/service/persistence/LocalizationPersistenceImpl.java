@@ -298,7 +298,7 @@ public class LocalizationPersistenceImpl extends BasePersistenceImpl<Localizatio
     }
 
     public Localization updateImpl(
-        com.rosettastone.cis.model.Localization localization, boolean merge)
+        com.erp.lead.model.Localization localization, boolean merge)
         throws SystemException {
         localization = toUnwrappedModel(localization);
 
@@ -1460,7 +1460,7 @@ public class LocalizationPersistenceImpl extends BasePersistenceImpl<Localizatio
     public void afterPropertiesSet() {
         String[] listenerClassNames = StringUtil.split(GetterUtil.getString(
                     com.liferay.util.service.ServiceProps.get(
-                        "value.object.listener.com.rosettastone.cis.model.Localization")));
+                        "value.object.listener.com.erp.lead.model.Localization")));
 
         if (listenerClassNames.length > 0) {
             try {

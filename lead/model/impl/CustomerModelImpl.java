@@ -66,13 +66,13 @@ public class CustomerModelImpl extends BaseModelImpl<Customer>
     public static final String SESSION_FACTORY = "cisSessionFactory";
     public static final String TX_MANAGER = "cisTransactionManager";
     public static final boolean ENTITY_CACHE_ENABLED = GetterUtil.getBoolean(com.liferay.util.service.ServiceProps.get(
-                "value.object.entity.cache.enabled.com.rosettastone.cis.model.Customer"),
+                "value.object.entity.cache.enabled.com.erp.lead.model.Customer"),
             true);
     public static final boolean FINDER_CACHE_ENABLED = GetterUtil.getBoolean(com.liferay.util.service.ServiceProps.get(
-                "value.object.finder.cache.enabled.com.rosettastone.cis.model.Customer"),
+                "value.object.finder.cache.enabled.com.erp.lead.model.Customer"),
             true);
     public static final long LOCK_EXPIRATION_TIME = GetterUtil.getLong(com.liferay.util.service.ServiceProps.get(
-                "lock.expiration.time.com.rosettastone.cis.model.Customer"));
+                "lock.expiration.time.com.erp.lead.model.Customer"));
     private int _id;
     private String _fullName;
     private String _email;

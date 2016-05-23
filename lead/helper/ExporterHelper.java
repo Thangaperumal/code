@@ -629,7 +629,7 @@ public class ExporterHelper{
 			 
 		         int SMTP_HOST_PORT=Integer.parseInt(PrefsPropsUtil.getString("mail.session.mail.smtp.port"));
 		         String SMTP_HOST_NAME=PrefsPropsUtil.getString("mail.session.mail.smtp.host");
-		         String SMTP_AUTH_USER="do_not_reply@rosettastone.com";
+		         String SMTP_AUTH_USER="do_not_reply@erpleadst.com";
 				 String SMTP_AUTH_PWD=PrefsPropsUtil.getString("mail.session.mail.smtp.password");
 				 if(sendEmailAsCus==1){
 					 if(pair.get("email")!=null){
@@ -655,7 +655,7 @@ public class ExporterHelper{
 			     message.setContent(body, "text/plain");
 			
 			     message.addRecipient(Message.RecipientType.TO,new InternetAddress(i));
-			     message.setFrom(new InternetAddress("do_not_reply@rosettastone.com"));
+			     message.setFrom(new InternetAddress("do_not_reply@erpleadst.com"));
 			
 			    transport.connect(SMTP_HOST_NAME, SMTP_HOST_PORT, SMTP_AUTH_USER,SMTP_AUTH_PWD);
 			
@@ -698,7 +698,7 @@ public class ExporterHelper{
 	
 	            int SMTP_HOST_PORT=Integer.parseInt(PrefsPropsUtil.getString("mail.session.mail.smtp.port"));
 	            String SMTP_HOST_NAME=PrefsPropsUtil.getString("mail.session.mail.smtp.host");
-	            String SMTP_AUTH_USER="do_not_reply@rosettastone.com";
+	            String SMTP_AUTH_USER="do_not_reply@erpleadst.com";
 				String SMTP_AUTH_PWD=PrefsPropsUtil.getString("mail.session.mail.smtp.password");
 	       
 	            Properties props = new Properties();
@@ -719,7 +719,7 @@ public class ExporterHelper{
 			
 			     message.addRecipient(Message.RecipientType.TO,
 			     new InternetAddress((String) pair.get("email")));
-				 message.setFrom(new InternetAddress("do_not_reply@rosettastone.com"));
+				 message.setFrom(new InternetAddress("do_not_reply@erpleadst.com"));
 			
 			    transport.connect(SMTP_HOST_NAME, SMTP_HOST_PORT, SMTP_AUTH_USER,SMTP_AUTH_PWD);
 			
@@ -738,7 +738,7 @@ public class ExporterHelper{
 		try{
 			/*int SMTP_HOST_PORT=Integer.parseInt(PrefsPropsUtil.getString("mail.session.mail.smtp.port"));
 	         String SMTP_HOST_NAME=PrefsPropsUtil.getString("mail.session.mail.smtp.host");
-	         String SMTP_AUTH_USER="do_not_reply@rosettastone.com";
+	         String SMTP_AUTH_USER="do_not_reply@erpleadst.com";
 			 String SMTP_AUTH_PWD=PrefsPropsUtil.getString("mail.session.mail.smtp.password");*/
 			//String url = "http://now.eloqua.com/e/f2.aspx";
 			String url = PrefsPropsUtil.getString("eloqua.export.url");
@@ -753,7 +753,7 @@ public class ExporterHelper{
 			con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
 	
 			String urlParameters = urlEncodeUTF8(pair);
-			//String urlParameters = "C_Comments_Large_Text1=Sample comments&C_Receive_the_Latest_News_From_RS1=1&Submit.x=37&Submit.y=1&augment_professional_development_of_employees=1&c_role1=Human Resources&c_sub_sector1=Foundation&city=Town&country_iso=826&elqFormName=OrganizationsContactFormUK&elqSiteID=1294&email=test@test.com&first_name=mohit&formurl=/content/rosettastoneuk/uk/government/form/demo.html&import_source=inst-form org uk&improve_effectiveness_of_employee_communications=1&improve_engagement_of_diverse_employees=1&industry=Non Profit&last_name=kumar&leadsource=Web&organization_name=organisation&other=1&phone_number=90000000000&prepare_employees_for_global_assignments=1&street_address=test&success_path=/content/rosettastoneuk/uk/enterprise/totale.html&zip_code=767677";
+			//String urlParameters = "C_Comments_Large_Text1=Sample comments&C_Receive_the_Latest_News_From_RS1=1&Submit.x=37&Submit.y=1&augment_professional_development_of_employees=1&c_role1=Human Resources&c_sub_sector1=Foundation&city=Town&country_iso=826&elqFormName=OrganizationsContactFormUK&elqSiteID=1294&email=test@test.com&first_name=mohit&formurl=/content/erpleadstuk/uk/government/form/demo.html&import_source=inst-form org uk&improve_effectiveness_of_employee_communications=1&improve_engagement_of_diverse_employees=1&industry=Non Profit&last_name=kumar&leadsource=Web&organization_name=organisation&other=1&phone_number=90000000000&prepare_employees_for_global_assignments=1&street_address=test&success_path=/content/erpleadstuk/uk/enterprise/totale.html&zip_code=767677";
 			System.out.println("Post parameters as part of eloqua exporter :: " + urlParameters);
 			
 			recordSuccessLog(pair,exporter,formEntryId);

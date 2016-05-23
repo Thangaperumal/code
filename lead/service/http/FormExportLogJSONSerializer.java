@@ -38,7 +38,7 @@ public class FormExportLogJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.FormExportLog[] models) {
+        com.erp.lead.model.FormExportLog[] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (FormExportLog model : models) {
@@ -49,7 +49,7 @@ public class FormExportLogJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.FormExportLog[][] models) {
+        com.erp.lead.model.FormExportLog[][] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (FormExportLog[] model : models) {
@@ -60,7 +60,7 @@ public class FormExportLogJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        List<com.rosettastone.cis.model.FormExportLog> models) {
+        List<com.erp.lead.model.FormExportLog> models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (FormExportLog model : models) {

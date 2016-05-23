@@ -260,7 +260,7 @@ public class FormEmailTemplatePersistenceImpl extends BasePersistenceImpl<FormEm
     }
 
     public FormEmailTemplate updateImpl(
-        com.rosettastone.cis.model.FormEmailTemplate formEmailTemplate,
+        com.erp.lead.model.FormEmailTemplate formEmailTemplate,
         boolean merge) throws SystemException {
         formEmailTemplate = toUnwrappedModel(formEmailTemplate);
 
@@ -549,7 +549,7 @@ public class FormEmailTemplatePersistenceImpl extends BasePersistenceImpl<FormEm
     public void afterPropertiesSet() {
         String[] listenerClassNames = StringUtil.split(GetterUtil.getString(
                     com.liferay.util.service.ServiceProps.get(
-                        "value.object.listener.com.rosettastone.cis.model.FormEmailTemplate")));
+                        "value.object.listener.com.erp.lead.model.FormEmailTemplate")));
 
         if (listenerClassNames.length > 0) {
             try {

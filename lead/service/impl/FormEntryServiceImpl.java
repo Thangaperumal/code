@@ -17,7 +17,7 @@ import com.erp.lead.service.base.FormEntryServiceBaseImpl;
  * This is a remote service. Methods of this service are expected to have security checks based on the propagated JAAS credentials because this service can be accessed remotely.
  * </p>
  *
- * @author RosettaStone Ltd.
+ * @author Thangaperumal Ltd.
  * @see com.erp.lead.service.base.FormEntryServiceBaseImpl
  * @see com.erp.lead.service.FormEntryServiceUtil
  */

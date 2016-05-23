@@ -273,7 +273,7 @@ public class PromoPersistenceImpl extends BasePersistenceImpl<Promo>
         return promo;
     }
 
-    public Promo updateImpl(com.rosettastone.cis.model.Promo promo,
+    public Promo updateImpl(com.erp.lead.model.Promo promo,
         boolean merge) throws SystemException {
         promo = toUnwrappedModel(promo);
 
@@ -968,7 +968,7 @@ public class PromoPersistenceImpl extends BasePersistenceImpl<Promo>
     public void afterPropertiesSet() {
         String[] listenerClassNames = StringUtil.split(GetterUtil.getString(
                     com.liferay.util.service.ServiceProps.get(
-                        "value.object.listener.com.rosettastone.cis.model.Promo")));
+                        "value.object.listener.com.erp.lead.model.Promo")));
 
         if (listenerClassNames.length > 0) {
             try {

@@ -149,7 +149,7 @@ public class OrderJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.Order[] models) {
+        com.erp.lead.model.Order[] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Order model : models) {
@@ -160,7 +160,7 @@ public class OrderJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.Order[][] models) {
+        com.erp.lead.model.Order[][] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Order[] model : models) {
@@ -171,7 +171,7 @@ public class OrderJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        List<com.rosettastone.cis.model.Order> models) {
+        List<com.erp.lead.model.Order> models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Order model : models) {

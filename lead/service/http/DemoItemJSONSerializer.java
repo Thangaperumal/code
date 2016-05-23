@@ -26,7 +26,7 @@ public class DemoItemJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.DemoItem[] models) {
+        com.erp.lead.model.DemoItem[] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (DemoItem model : models) {
@@ -37,7 +37,7 @@ public class DemoItemJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.DemoItem[][] models) {
+        com.erp.lead.model.DemoItem[][] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (DemoItem[] model : models) {
@@ -48,7 +48,7 @@ public class DemoItemJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        List<com.rosettastone.cis.model.DemoItem> models) {
+        List<com.erp.lead.model.DemoItem> models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (DemoItem model : models) {

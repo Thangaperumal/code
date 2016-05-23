@@ -23,7 +23,7 @@ public class VerticalJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.Vertical[] models) {
+        com.erp.lead.model.Vertical[] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Vertical model : models) {
@@ -34,7 +34,7 @@ public class VerticalJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.Vertical[][] models) {
+        com.erp.lead.model.Vertical[][] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Vertical[] model : models) {
@@ -45,7 +45,7 @@ public class VerticalJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        List<com.rosettastone.cis.model.Vertical> models) {
+        List<com.erp.lead.model.Vertical> models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Vertical model : models) {

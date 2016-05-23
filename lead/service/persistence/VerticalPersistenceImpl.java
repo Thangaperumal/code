@@ -276,7 +276,7 @@ public class VerticalPersistenceImpl extends BasePersistenceImpl<Vertical>
         return vertical;
     }
 
-    public Vertical updateImpl(com.rosettastone.cis.model.Vertical vertical,
+    public Vertical updateImpl(com.erp.lead.model.Vertical vertical,
         boolean merge) throws SystemException {
         vertical = toUnwrappedModel(vertical);
 
@@ -970,7 +970,7 @@ public class VerticalPersistenceImpl extends BasePersistenceImpl<Vertical>
     public void afterPropertiesSet() {
         String[] listenerClassNames = StringUtil.split(GetterUtil.getString(
                     com.liferay.util.service.ServiceProps.get(
-                        "value.object.listener.com.rosettastone.cis.model.Vertical")));
+                        "value.object.listener.com.erp.lead.model.Vertical")));
 
         if (listenerClassNames.length > 0) {
             try {

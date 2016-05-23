@@ -253,7 +253,7 @@ public class OrderPersistenceImpl extends BasePersistenceImpl<Order>
         return order;
     }
 
-    public Order updateImpl(com.rosettastone.cis.model.Order order,
+    public Order updateImpl(com.erp.lead.model.Order order,
         boolean merge) throws SystemException {
         order = toUnwrappedModel(order);
 
@@ -613,7 +613,7 @@ public class OrderPersistenceImpl extends BasePersistenceImpl<Order>
     public void afterPropertiesSet() {
         String[] listenerClassNames = StringUtil.split(GetterUtil.getString(
                     com.liferay.util.service.ServiceProps.get(
-                        "value.object.listener.com.rosettastone.cis.model.Order")));
+                        "value.object.listener.com.erp.lead.model.Order")));
 
         if (listenerClassNames.length > 0) {
             try {

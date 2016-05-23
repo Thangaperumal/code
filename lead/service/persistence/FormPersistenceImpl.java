@@ -357,7 +357,7 @@ public class FormPersistenceImpl extends BasePersistenceImpl<Form>
         return form;
     }
 
-    public Form updateImpl(com.rosettastone.cis.model.Form form, boolean merge)
+    public Form updateImpl(com.erp.lead.model.Form form, boolean merge)
         throws SystemException {
         form = toUnwrappedModel(form);
 
@@ -3090,7 +3090,7 @@ public class FormPersistenceImpl extends BasePersistenceImpl<Form>
     public void afterPropertiesSet() {
         String[] listenerClassNames = StringUtil.split(GetterUtil.getString(
                     com.liferay.util.service.ServiceProps.get(
-                        "value.object.listener.com.rosettastone.cis.model.Form")));
+                        "value.object.listener.com.erp.lead.model.Form")));
 
         if (listenerClassNames.length > 0) {
             try {

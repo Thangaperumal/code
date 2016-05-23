@@ -282,7 +282,7 @@ public class DemoItemPersistenceImpl extends BasePersistenceImpl<DemoItem>
         return demoItem;
     }
 
-    public DemoItem updateImpl(com.rosettastone.cis.model.DemoItem demoItem,
+    public DemoItem updateImpl(com.erp.lead.model.DemoItem demoItem,
         boolean merge) throws SystemException {
         demoItem = toUnwrappedModel(demoItem);
 
@@ -1039,7 +1039,7 @@ public class DemoItemPersistenceImpl extends BasePersistenceImpl<DemoItem>
     public void afterPropertiesSet() {
         String[] listenerClassNames = StringUtil.split(GetterUtil.getString(
                     com.liferay.util.service.ServiceProps.get(
-                        "value.object.listener.com.rosettastone.cis.model.DemoItem")));
+                        "value.object.listener.com.erp.lead.model.DemoItem")));
 
         if (listenerClassNames.length > 0) {
             try {

@@ -32,7 +32,7 @@ public class CountryJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.Country[] models) {
+        com.erp.lead.model.Country[] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Country model : models) {
@@ -43,7 +43,7 @@ public class CountryJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.Country[][] models) {
+        com.erp.lead.model.Country[][] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Country[] model : models) {
@@ -54,7 +54,7 @@ public class CountryJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        List<com.rosettastone.cis.model.Country> models) {
+        List<com.erp.lead.model.Country> models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Country model : models) {

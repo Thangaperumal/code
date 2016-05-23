@@ -45,7 +45,7 @@ public class FormEntryJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.FormEntry[] models) {
+        com.erp.lead.model.FormEntry[] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (FormEntry model : models) {
@@ -56,7 +56,7 @@ public class FormEntryJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.FormEntry[][] models) {
+        com.erp.lead.model.FormEntry[][] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (FormEntry[] model : models) {
@@ -67,7 +67,7 @@ public class FormEntryJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        List<com.rosettastone.cis.model.FormEntry> models) {
+        List<com.erp.lead.model.FormEntry> models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (FormEntry model : models) {

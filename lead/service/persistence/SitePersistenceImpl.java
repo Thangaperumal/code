@@ -273,7 +273,7 @@ public class SitePersistenceImpl extends BasePersistenceImpl<Site>
         return site;
     }
 
-    public Site updateImpl(com.rosettastone.cis.model.Site site, boolean merge)
+    public Site updateImpl(com.erp.lead.model.Site site, boolean merge)
         throws SystemException {
         site = toUnwrappedModel(site);
 
@@ -965,7 +965,7 @@ public class SitePersistenceImpl extends BasePersistenceImpl<Site>
     public void afterPropertiesSet() {
         String[] listenerClassNames = StringUtil.split(GetterUtil.getString(
                     com.liferay.util.service.ServiceProps.get(
-                        "value.object.listener.com.rosettastone.cis.model.Site")));
+                        "value.object.listener.com.erp.lead.model.Site")));
 
         if (listenerClassNames.length > 0) {
             try {

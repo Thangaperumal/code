@@ -297,7 +297,7 @@ public class FormExportLogPersistenceImpl extends BasePersistenceImpl<FormExport
     }
 
     public FormExportLog updateImpl(
-        com.rosettastone.cis.model.FormExportLog formExportLog, boolean merge)
+        com.erp.lead.model.FormExportLog formExportLog, boolean merge)
         throws SystemException {
         formExportLog = toUnwrappedModel(formExportLog);
 
@@ -1408,7 +1408,7 @@ public class FormExportLogPersistenceImpl extends BasePersistenceImpl<FormExport
     public void afterPropertiesSet() {
         String[] listenerClassNames = StringUtil.split(GetterUtil.getString(
                     com.liferay.util.service.ServiceProps.get(
-                        "value.object.listener.com.rosettastone.cis.model.FormExportLog")));
+                        "value.object.listener.com.erp.lead.model.FormExportLog")));
 
         if (listenerClassNames.length > 0) {
             try {

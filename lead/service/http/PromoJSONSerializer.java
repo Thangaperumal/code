@@ -52,7 +52,7 @@ public class PromoJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.Promo[] models) {
+        com.erp.lead.model.Promo[] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Promo model : models) {
@@ -63,7 +63,7 @@ public class PromoJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.Promo[][] models) {
+        com.erp.lead.model.Promo[][] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Promo[] model : models) {
@@ -74,7 +74,7 @@ public class PromoJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        List<com.rosettastone.cis.model.Promo> models) {
+        List<com.erp.lead.model.Promo> models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Promo model : models) {

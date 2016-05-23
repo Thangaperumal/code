@@ -290,7 +290,7 @@ public class CountryPersistenceImpl extends BasePersistenceImpl<Country>
         return country;
     }
 
-    public Country updateImpl(com.rosettastone.cis.model.Country country,
+    public Country updateImpl(com.erp.lead.model.Country country,
         boolean merge) throws SystemException {
         country = toUnwrappedModel(country);
 
@@ -1396,7 +1396,7 @@ public class CountryPersistenceImpl extends BasePersistenceImpl<Country>
     public void afterPropertiesSet() {
         String[] listenerClassNames = StringUtil.split(GetterUtil.getString(
                     com.liferay.util.service.ServiceProps.get(
-                        "value.object.listener.com.rosettastone.cis.model.Country")));
+                        "value.object.listener.com.erp.lead.model.Country")));
 
         if (listenerClassNames.length > 0) {
             try {

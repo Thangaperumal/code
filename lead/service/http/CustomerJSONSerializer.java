@@ -62,7 +62,7 @@ public class CustomerJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.Customer[] models) {
+        com.erp.lead.model.Customer[] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Customer model : models) {
@@ -73,7 +73,7 @@ public class CustomerJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.Customer[][] models) {
+        com.erp.lead.model.Customer[][] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Customer[] model : models) {
@@ -84,7 +84,7 @@ public class CustomerJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        List<com.rosettastone.cis.model.Customer> models) {
+        List<com.erp.lead.model.Customer> models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Customer model : models) {

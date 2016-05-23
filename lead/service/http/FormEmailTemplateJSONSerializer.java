@@ -25,7 +25,7 @@ public class FormEmailTemplateJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.FormEmailTemplate[] models) {
+        com.erp.lead.model.FormEmailTemplate[] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (FormEmailTemplate model : models) {
@@ -36,7 +36,7 @@ public class FormEmailTemplateJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.FormEmailTemplate[][] models) {
+        com.erp.lead.model.FormEmailTemplate[][] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (FormEmailTemplate[] model : models) {
@@ -47,7 +47,7 @@ public class FormEmailTemplateJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        List<com.rosettastone.cis.model.FormEmailTemplate> models) {
+        List<com.erp.lead.model.FormEmailTemplate> models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (FormEmailTemplate model : models) {

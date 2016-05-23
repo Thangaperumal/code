@@ -260,7 +260,7 @@ public class EcOrderIdSequencePersistenceImpl extends BasePersistenceImpl<EcOrde
     }
 
     public EcOrderIdSequence updateImpl(
-        com.rosettastone.cis.model.EcOrderIdSequence ecOrderIdSequence,
+        com.erp.lead.model.EcOrderIdSequence ecOrderIdSequence,
         boolean merge) throws SystemException {
         ecOrderIdSequence = toUnwrappedModel(ecOrderIdSequence);
 
@@ -545,7 +545,7 @@ public class EcOrderIdSequencePersistenceImpl extends BasePersistenceImpl<EcOrde
     public void afterPropertiesSet() {
         String[] listenerClassNames = StringUtil.split(GetterUtil.getString(
                     com.liferay.util.service.ServiceProps.get(
-                        "value.object.listener.com.rosettastone.cis.model.EcOrderIdSequence")));
+                        "value.object.listener.com.erp.lead.model.EcOrderIdSequence")));
 
         if (listenerClassNames.length > 0) {
             try {

@@ -30,7 +30,7 @@ public class SiteJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.Site[] models) {
+        com.erp.lead.model.Site[] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Site model : models) {
@@ -41,7 +41,7 @@ public class SiteJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.Site[][] models) {
+        com.erp.lead.model.Site[][] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Site[] model : models) {
@@ -52,7 +52,7 @@ public class SiteJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        List<com.rosettastone.cis.model.Site> models) {
+        List<com.erp.lead.model.Site> models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Site model : models) {

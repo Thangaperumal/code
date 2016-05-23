@@ -49,13 +49,13 @@ public class FormEntryModelImpl extends BaseModelImpl<FormEntry>
     public static final String SESSION_FACTORY = "cisSessionFactory";
     public static final String TX_MANAGER = "cisTransactionManager";
     public static final boolean ENTITY_CACHE_ENABLED = GetterUtil.getBoolean(com.liferay.util.service.ServiceProps.get(
-                "value.object.entity.cache.enabled.com.rosettastone.cis.model.FormEntry"),
+                "value.object.entity.cache.enabled.com.erp.lead.model.FormEntry"),
             true);
     public static final boolean FINDER_CACHE_ENABLED = GetterUtil.getBoolean(com.liferay.util.service.ServiceProps.get(
-                "value.object.finder.cache.enabled.com.rosettastone.cis.model.FormEntry"),
+                "value.object.finder.cache.enabled.com.erp.lead.model.FormEntry"),
             true);
     public static final long LOCK_EXPIRATION_TIME = GetterUtil.getLong(com.liferay.util.service.ServiceProps.get(
-                "lock.expiration.time.com.rosettastone.cis.model.FormEntry"));
+                "lock.expiration.time.com.erp.lead.model.FormEntry"));
     private int _id;
     private int _formId;
     private String _formUrl;

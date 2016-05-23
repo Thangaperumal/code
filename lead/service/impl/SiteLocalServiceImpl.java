@@ -28,7 +28,7 @@ import com.liferay.portal.kernel.json.JSONFactoryUtil;
  * This is a local service. Methods of this service will not have security checks based on the propagated JAAS credentials because this service can only be accessed from within the same VM.
  * </p>
  *
- * @author RosettaStone Ltd.
+ * @author Thangaperumal Ltd.
  * @see com.erp.lead.service.base.SiteLocalServiceBaseImpl
  * @see com.erp.lead.service.SiteLocalServiceUtil
  */

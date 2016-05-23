@@ -256,7 +256,7 @@ public class CustomerPersistenceImpl extends BasePersistenceImpl<Customer>
         return customer;
     }
 
-    public Customer updateImpl(com.rosettastone.cis.model.Customer customer,
+    public Customer updateImpl(com.erp.lead.model.Customer customer,
         boolean merge) throws SystemException {
         customer = toUnwrappedModel(customer);
 
@@ -558,7 +558,7 @@ public class CustomerPersistenceImpl extends BasePersistenceImpl<Customer>
     public void afterPropertiesSet() {
         String[] listenerClassNames = StringUtil.split(GetterUtil.getString(
                     com.liferay.util.service.ServiceProps.get(
-                        "value.object.listener.com.rosettastone.cis.model.Customer")));
+                        "value.object.listener.com.erp.lead.model.Customer")));
 
         if (listenerClassNames.length > 0) {
             try {

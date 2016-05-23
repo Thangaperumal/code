@@ -36,9 +36,9 @@ public class LDAPHelper {
 	    Map<String, String> conf;
     	conf = getLDAPConfiguration();
 	    env.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.ldap.LdapCtxFactory");
-	    //env.put(Context.PROVIDER_URL, "ldap://10.1.2.40:389/OU=Lister,OU=Consultants,OU=Corporate,DC=rosettastone,DC=local");
+	    //env.put(Context.PROVIDER_URL, "ldap://10.1.2.40:389/OU=Lister,OU=Consultants,OU=Corporate,DC=erpleadst,DC=local");
 	    env.put(Context.PROVIDER_URL, conf.get("endPointUrl"));
-	    //dc=rosettastone,dc=local
+	    //dc=erpleadst,dc=local
 
 	    // To get rid of the PartialResultException when using Active Directory
 	    env.put(Context.REFERRAL, "follow");

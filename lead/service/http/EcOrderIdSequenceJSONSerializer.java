@@ -21,7 +21,7 @@ public class EcOrderIdSequenceJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.EcOrderIdSequence[] models) {
+        com.erp.lead.model.EcOrderIdSequence[] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (EcOrderIdSequence model : models) {
@@ -32,7 +32,7 @@ public class EcOrderIdSequenceJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.EcOrderIdSequence[][] models) {
+        com.erp.lead.model.EcOrderIdSequence[][] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (EcOrderIdSequence[] model : models) {
@@ -43,7 +43,7 @@ public class EcOrderIdSequenceJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        List<com.rosettastone.cis.model.EcOrderIdSequence> models) {
+        List<com.erp.lead.model.EcOrderIdSequence> models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (EcOrderIdSequence model : models) {

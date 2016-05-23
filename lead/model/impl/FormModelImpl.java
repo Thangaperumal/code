@@ -61,13 +61,13 @@ public class FormModelImpl extends BaseModelImpl<Form> implements FormModel {
     public static final String SESSION_FACTORY = "cisSessionFactory";
     public static final String TX_MANAGER = "cisTransactionManager";
     public static final boolean ENTITY_CACHE_ENABLED = GetterUtil.getBoolean(com.liferay.util.service.ServiceProps.get(
-                "value.object.entity.cache.enabled.com.rosettastone.cis.model.Form"),
+                "value.object.entity.cache.enabled.com.erp.lead.model.Form"),
             true);
     public static final boolean FINDER_CACHE_ENABLED = GetterUtil.getBoolean(com.liferay.util.service.ServiceProps.get(
-                "value.object.finder.cache.enabled.com.rosettastone.cis.model.Form"),
+                "value.object.finder.cache.enabled.com.erp.lead.model.Form"),
             true);
     public static final long LOCK_EXPIRATION_TIME = GetterUtil.getLong(com.liferay.util.service.ServiceProps.get(
-                "lock.expiration.time.com.rosettastone.cis.model.Form"));
+                "lock.expiration.time.com.erp.lead.model.Form"));
     private int _id;
     private int _siteId;
     private String _formCode;

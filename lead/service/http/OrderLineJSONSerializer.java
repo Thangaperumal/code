@@ -74,7 +74,7 @@ public class OrderLineJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.OrderLine[] models) {
+        com.erp.lead.model.OrderLine[] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (OrderLine model : models) {
@@ -85,7 +85,7 @@ public class OrderLineJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.OrderLine[][] models) {
+        com.erp.lead.model.OrderLine[][] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (OrderLine[] model : models) {
@@ -96,7 +96,7 @@ public class OrderLineJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        List<com.rosettastone.cis.model.OrderLine> models) {
+        List<com.erp.lead.model.OrderLine> models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (OrderLine model : models) {

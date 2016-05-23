@@ -276,7 +276,7 @@ public class FieldEntryPersistenceImpl extends BasePersistenceImpl<FieldEntry>
     }
 
     public FieldEntry updateImpl(
-        com.rosettastone.cis.model.FieldEntry fieldEntry, boolean merge)
+        com.erp.lead.model.FieldEntry fieldEntry, boolean merge)
         throws SystemException {
         fieldEntry = toUnwrappedModel(fieldEntry);
 
@@ -941,7 +941,7 @@ public class FieldEntryPersistenceImpl extends BasePersistenceImpl<FieldEntry>
     public void afterPropertiesSet() {
         String[] listenerClassNames = StringUtil.split(GetterUtil.getString(
                     com.liferay.util.service.ServiceProps.get(
-                        "value.object.listener.com.rosettastone.cis.model.FieldEntry")));
+                        "value.object.listener.com.erp.lead.model.FieldEntry")));
 
         if (listenerClassNames.length > 0) {
             try {

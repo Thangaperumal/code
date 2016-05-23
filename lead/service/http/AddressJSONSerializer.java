@@ -61,7 +61,7 @@ public class AddressJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.Address[] models) {
+        com.erp.lead.model.Address[] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Address model : models) {
@@ -72,7 +72,7 @@ public class AddressJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.Address[][] models) {
+        com.erp.lead.model.Address[][] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Address[] model : models) {
@@ -83,7 +83,7 @@ public class AddressJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        List<com.rosettastone.cis.model.Address> models) {
+        List<com.erp.lead.model.Address> models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Address model : models) {

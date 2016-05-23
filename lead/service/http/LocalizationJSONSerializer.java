@@ -25,7 +25,7 @@ public class LocalizationJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.Localization[] models) {
+        com.erp.lead.model.Localization[] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Localization model : models) {
@@ -36,7 +36,7 @@ public class LocalizationJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        com.rosettastone.cis.model.Localization[][] models) {
+        com.erp.lead.model.Localization[][] models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Localization[] model : models) {
@@ -47,7 +47,7 @@ public class LocalizationJSONSerializer {
     }
 
     public static JSONArray toJSONArray(
-        List<com.rosettastone.cis.model.Localization> models) {
+        List<com.erp.lead.model.Localization> models) {
         JSONArray jsonArray = JSONFactoryUtil.createJSONArray();
 
         for (Localization model : models) {

@@ -124,13 +124,13 @@ public class OrderModelImpl extends BaseModelImpl<Order> implements OrderModel {
     public static final String SESSION_FACTORY = "cisSessionFactory";
     public static final String TX_MANAGER = "cisTransactionManager";
     public static final boolean ENTITY_CACHE_ENABLED = GetterUtil.getBoolean(com.liferay.util.service.ServiceProps.get(
-                "value.object.entity.cache.enabled.com.rosettastone.cis.model.Order"),
+                "value.object.entity.cache.enabled.com.erp.lead.model.Order"),
             true);
     public static final boolean FINDER_CACHE_ENABLED = GetterUtil.getBoolean(com.liferay.util.service.ServiceProps.get(
-                "value.object.finder.cache.enabled.com.rosettastone.cis.model.Order"),
+                "value.object.finder.cache.enabled.com.erp.lead.model.Order"),
             true);
     public static final long LOCK_EXPIRATION_TIME = GetterUtil.getLong(com.liferay.util.service.ServiceProps.get(
-                "lock.expiration.time.com.rosettastone.cis.model.Order"));
+                "lock.expiration.time.com.erp.lead.model.Order"));
     private int _id;
     private int _orderNumber;
     private int _customerId;

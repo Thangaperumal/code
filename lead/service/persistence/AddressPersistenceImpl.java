@@ -256,7 +256,7 @@ public class AddressPersistenceImpl extends BasePersistenceImpl<Address>
         return address;
     }
 
-    public Address updateImpl(com.rosettastone.cis.model.Address address,
+    public Address updateImpl(com.erp.lead.model.Address address,
         boolean merge) throws SystemException {
         address = toUnwrappedModel(address);
 
@@ -557,7 +557,7 @@ public class AddressPersistenceImpl extends BasePersistenceImpl<Address>
     public void afterPropertiesSet() {
         String[] listenerClassNames = StringUtil.split(GetterUtil.getString(
                     com.liferay.util.service.ServiceProps.get(
-                        "value.object.listener.com.rosettastone.cis.model.Address")));
+                        "value.object.listener.com.erp.lead.model.Address")));
 
         if (listenerClassNames.length > 0) {
             try {
